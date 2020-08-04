@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Free Video Downloader</string>
+    <string name="title_activity_navi_drawer">NaviDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Downloader</string>
+    <string name="nav_header_subtitle">Downloader</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_browser">Free Video Downloader</string>
+    <!-- AdMob Keys -->
+    <string name="admob_app_id">ca-app-pub-3045966110941043~8625620707</string>
+    <string name="admob_banner_id">ca-app-pub-3045966110941043/5616313984</string>
+    <string name="admob_interstitial_id">ca-app-pub-3045966110941043/4047726222</string>
+    <string name="native_advanced_ad_keys">ca-app-pub-3045966110941043/3644756760</string>
+    <string name="iap_license_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo/pV9ARfEw9mQMt5BF/vrHbI7fzm1NHCrgu/qJrEoUsuS2xsjFDCbqm2h200zVPvYNnlvktQAAsu6jEReDqRUHbuG1UHiczZqHgv/5m88naXLJ7Pa1Qbko8kLEPI/eAAj9ZHxl5s+V7gWSoKMlTIIAGroJ4wF+YJELpCWm0cIoAk2F0Gc+cY3Pd1PQHti5Wp4BgCzkmmruMZC0OvvVkrPMlMwadiUYUb319Me42RZarnSbNA5Ai9y7yPSjMiqjUwLNEHKMJfLhvVdFBndRqnao1q4Iy262DbBOlc1qhwhYEEYSEvH2sJ0ab3Io3tR7x5dpMfVQItxXCuCQCpqz+fTwIDAQAB</string>
+     AdMob Test Keys
+<!--            <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+            <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+            <string name="admob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+            <string name="native_advanced_ad_keys">ca-app-pub-3940256099942544/2247696110</string>-->
+
+
+    <string name="video_thumbnail_key">Video Thumbnail</string>
+    <string name="video_title_key">Video Title</string>
+    <string name="download_action">Download</string>
+    <string name="cancel_action">Cancel</string>
+    <string name="app_size_b">%1$.1f B</string>
+    <string name="app_size_gib">%1$.1f GB</string>
+    <string name="app_size_kib">%1$.1f KB</string>
+    <string name="app_size_mib">%1$.1f MB</string>
+    <string name="download">Download</string>
+
+    <string name="fb_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="fb_banner_id">751988615369404_752018892033043</string>
+    <string name="fb_interstitial_id">751988615369404_752019112033021</string>
+    <string name="fb_advanced_ad_keys">751988615369404_752018015366464</string>
+
+
+</resources>

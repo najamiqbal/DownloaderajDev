@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/main_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@id/tabLayoutVideosActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextColor="@color/colorDarkGray" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@id/bottomNavigationVideosActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bottom_menu"
+        android:fitsSystemWindows="true"
+        app:elevation="5.0dip"
+        app:itemIconTint="@color/colorWhite"
+        app:itemTextColor="@color/colorWhite"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu_videos_activity" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@id/viewPagerVideosActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomNavigationVideosActivity"
+        android:layout_below="@id/tabLayoutVideosActivity"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</RelativeLayout>

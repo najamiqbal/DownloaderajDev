@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@android:color/black"
+    android:foreground="?attr/selectableItemBackground">
+
+
+    <com.bogdwellers.pinchtozoom.view.ImageViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/hidethis"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#99000000">
+
+        <RelativeLayout
+            android:id="@+id/img_back"
+            style="@style/SelectableItemBackground"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/svg_back_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/text_layout"
+            style="@style/SelectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/img_delete"
+            android:layout_toLeftOf="@+id/img_delete"
+            android:layout_toEndOf="@+id/img_back"
+            android:layout_toRightOf="@+id/img_back">
+
+            <TextView
+                android:id="@+id/textviewposition"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/img_delete"
+            style="@style/SelectableItemBackground"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/img_farword"
+            android:layout_toLeftOf="@+id/img_farword">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/svg_delete" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/img_farword"
+            style="@style/SelectableItemBackground"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/svg_share" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_ad_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center" />
+
+</FrameLayout>
+

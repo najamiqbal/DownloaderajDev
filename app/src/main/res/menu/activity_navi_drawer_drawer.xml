@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:visible="false"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/ic_browser"
+            android:title="Browse Videos" />
+        <item
+            android:id="@+id/nav_url"
+            android:icon="@drawable/ic_fb"
+            android:title="URL" />
+        <item
+            android:id="@+id/nav_social"
+            android:icon="@drawable/ic_url"
+            android:title="Facebook" />
+        <item
+            android:id="@+id/nav_insta"
+            android:icon="@drawable/ic_instagram"
+            android:title="Instagram" />
+        <item
+            android:id="@+id/nav_wa"
+            android:icon="@drawable/ic_whatsapp"
+            android:title="WhatsApp" />
+        <item
+            android:id="@+id/nav_dm"
+            android:icon="@drawable/ic_daily_motion"
+            android:title="Dailymotion" />
+        <item
+            android:id="@+id/nav_vimeo"
+            android:icon="@drawable/ico_vimeo"
+            android:title="Vimeo" />
+        <item
+            android:id="@+id/nav_twitter"
+            android:icon="@drawable/ico_twitter"
+            android:title="Twitter" />
+        <item
+            android:id="@+id/nav_saved"
+            android:icon="@drawable/ic_download"
+            android:title="Saved" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_rate_app"
+                android:title="Rate" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_cancel_black_24dp"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+</menu>

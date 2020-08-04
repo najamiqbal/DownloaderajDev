@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/bottom_sheet_list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    ads:behavior_hideable="true"
+    ads:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <TextView
+        android:id="@id/tvTitleLayoutDownloadSheetList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/colorBlack"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@id/tvDurationDownloadSheetList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:padding="5.0dip"
+        android:textSize="14.0sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_video"
+        android:drawablePadding="10.0dip"
+        android:gravity="center_vertical"
+        android:padding="5.0dip"
+        android:text="Select video quality to download" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recyclerDownloadSheetList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginBottom="20.0dip"
+        android:padding="5.0dip" />
+
+    <LinearLayout
+        android:id="@id/layoutFbBannerContainerSheetList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" />
+
+    <include
+        layout="@layout/banner_adview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

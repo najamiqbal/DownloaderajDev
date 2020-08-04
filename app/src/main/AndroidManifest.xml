@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ajdeveloper.instadownloader">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ico_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ico_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:name="com.ajdeveloper.instadownloader.VideoApplication">
+        <activity
+            android:name="com.ajdeveloper.instadownloader.Activities.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.ajdeveloper.instadownloader.Activities.PrivacyPolicyActivity"
+            tools:ignore="InnerclassSeparator" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.ajdeveloper.instadownloader.Activities.BrowserActivity"
+            android:label="@string/title_activity_browser"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.ajdeveloper.instadownloader.NaviDrawer"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name="com.ajdeveloper.instadownloader.MainActivity" />
+        <activity android:name="com.ajdeveloper.instadownloader.Activities.ImageViewerActivity" />
+        <activity android:name="com.ajdeveloper.instadownloader.Activities.VideosActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ajdeveloper.instadownloader.Activities.FullScreenVideoActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.my.package.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <service android:name="com.ajdeveloper.instadownloader.Download_HLS.DownloadService" />
+    </application>
+
+</manifest>

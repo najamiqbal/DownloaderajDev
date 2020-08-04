@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp"
+    android:orientation="vertical"
+    tools:context=".Fragments.SocialFragment">
+
+    <ImageView
+        android:id="@+id/iv_url"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:srcCompat="@drawable/ico_url"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/iv_fb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:srcCompat="@drawable/ico_fb"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/iv_dm"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:srcCompat="@drawable/ico_dm"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_pint"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        app:srcCompat="@drawable/ic_pint"
+        android:layout_weight="1"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_remove_ads"
+        android:orderInCategory="100"
+        android:title="Remove Ads"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_share_app"
+        android:orderInCategory="100"
+        android:title="Share App"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_rate_us"
+        android:orderInCategory="100"
+        android:title="Rate Us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_policy"
+        android:orderInCategory="100"
+        android:title="Privacy Policy"
+        app:showAsAction="never" />
+</menu>
